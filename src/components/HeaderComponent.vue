@@ -49,6 +49,8 @@
 <style>
   .custom-header:not(.no-wiggle) {
     animation-delay: 5s;
+    /* TODO activate when the loot crate stuff is implemented
     animation: barely-noticeable-wiggle infinite 4s ease;
+    */
   }
 </style>

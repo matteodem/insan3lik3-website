@@ -1,17 +1,24 @@
 <template>
-  <Layout>
+  <layout>
     <header-component></header-component>
-  </Layout>
+    <div class="mt4">
+      <stay-updated-component></stay-updated-component>
+    </div>
+  </layout>
 </template>
 
 <script>
   import HeaderComponent from '~/components/HeaderComponent.vue'
+  import StayUpdatedComponent from '~/components/StayUpdatedComponent.vue'
 
   export default {
-    components: { HeaderComponent },
+    components: {
+      HeaderComponent,
+      StayUpdatedComponent,
+    },
     metaInfo: {
-      title: 'Insan3Lik3'
-    }
+      title: 'Home',
+    },
   }
 </script>
 
