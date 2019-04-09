@@ -16,15 +16,22 @@
   </div>
 </template>
 <script>
-  import { Draggable } from '@shopify/draggable'
-
   export default {
     data () {
       return {
-        hasDragged: !!localStorage.getItem('il3_hasDragged'),
+        hasDragged: false,
+      }
+    },
+    created () {
+      if (process.isClient) {
+        this.hasDragged = !!localStorage.getItem('il3_hasDragged')
       }
     },
     mounted () {
+      if (!process.isClient) return null
+
+      const { Draggable } = require('@shopify/draggable')
+
       const draggable = new Draggable(this.$refs.logo, {
         draggable: '.custom-header img',
         dropzone: '.custom-question-mark',

@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "deploy-dev": "cd dist && now -n insan3lik3-website",
+    "deploy": "gridsome build && cd dist && now -n insan3lik3-website",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
