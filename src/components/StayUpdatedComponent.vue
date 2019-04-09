@@ -27,7 +27,7 @@
           { icon: 'md-musical-note', label: 'Soundcloud', href: 'https://soundcloud.com/Insan3Lik3' },
           { icon: 'logo-twitter', label: 'Twitter', href: 'https://twitter.com/Insan3Lik3' },
           { icon: 'logo-youtube', label: 'YouTube', href: 'https://youtube.com/Insan3Lik3' },
-          { icon: 'logo-instagram', label: 'Instagram', href: 'https://instagram.com/Insan3Lik3' },
+          { icon: 'logo-instagram', label: 'Instagram', href: 'https://instagram.com/insan3lik3.music' },
         ],
       }
     },
