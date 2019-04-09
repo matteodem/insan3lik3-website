@@ -1,0 +1,15 @@
+.draggable--is-dragging {
+  .custom-header {
+    animation: none;
+
+    img:not(.draggable-mirror) {
+      visibility: hidden !important;
+    }
+  }
+
+  .shadow-hover::after { box-shadow: none !important; }
+
+  .draggable-mirror {
+    opacity: 0.5;
+  }
+}
