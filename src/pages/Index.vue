@@ -8,8 +8,8 @@
 </template>
 
 <script>
-  import HeaderComponent from '~/components/HeaderComponent.vue'
-  import StayUpdatedComponent from '~/components/StayUpdatedComponent.vue'
+  import HeaderComponent from '../components/HeaderComponent.vue'
+  import StayUpdatedComponent from '../components/StayUpdatedComponent.vue'
 
   export default {
     components: {
