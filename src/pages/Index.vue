@@ -2,6 +2,9 @@
   <layout>
     <header-component></header-component>
     <div class="mt4">
+      <latest-stuff-component></latest-stuff-component>
+    </div>
+    <div class="mt4">
       <stay-updated-component></stay-updated-component>
     </div>
   </layout>
@@ -10,11 +13,13 @@
 <script>
   import HeaderComponent from '../components/HeaderComponent.vue'
   import StayUpdatedComponent from '../components/StayUpdatedComponent.vue'
+  import LatestStuffComponent from '../components/LatestStuffComponent.vue'
 
   export default {
     components: {
       HeaderComponent,
       StayUpdatedComponent,
+      LatestStuffComponent,
     },
     metaInfo: {
       title: 'Home',
