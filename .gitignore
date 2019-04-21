@@ -4,6 +4,7 @@
 src/.temp
 node_modules
 dist
+stuff/tracks-export
 .env
 .env.*
 .idea

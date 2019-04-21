@@ -6,5 +6,19 @@
 
 module.exports = {
   siteName: 'Insan3Lik3',
-  plugins: []
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank',
+    },
+  },
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'stuff/**/*.md',
+        typeName: 'Stuff',
+        route: '/stuff/:slug',
+      },
+    },
+  ],
 }
