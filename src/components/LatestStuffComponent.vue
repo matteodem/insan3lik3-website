@@ -5,7 +5,7 @@
         <g-link :to="latestItem.node.path" class="no-underline dark-land-violet">
           <div class="center" style="max-width: 50vw">
             <!-- FIXME Cannot use g-image cuz bug https://github.com/gridsome/gridsome/issues/292 -->
-            <img :alt="latestItem.node.title" :src="latestItem.node.image" class="shadow-2" style="max-width: 100%" />
+            <img :alt="latestItem.node.title" :src="latestItem.node.image" style="max-width: 100%" />
           </div>
           <div class="tc pa3 lh-solid">
             <div class="f3 f2-ns b">

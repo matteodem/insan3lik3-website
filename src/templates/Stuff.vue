@@ -1,21 +1,26 @@
 <template>
-  <layout>
-    <header-component></header-component>
-    <div class="pa3 pa0-l custom-stuff-content">
-      <div v-html="$page.stuff.content"></div>
+  <page-layout>
+    <div class="pa3 pa0-l">
+      <div class="pv4-ns cf" v-if="$page.stuff.type === 'music'">
+        <div class="w-100 w-50-ns pl4-ns fr">
+          <div class="custom-stuff-content">
+            <div v-html="$page.stuff.content"></div>
+          </div>
 
-      <div class="pb5" v-if="$page.stuff.type === 'music'">
-        <div class="mv3 f3">
-          Listen to on:
-          <span class="pl1" v-for="link in musicLinks">
+          <div class="mv3 f3">
+            Listen to on:
+            <span class="pl1" v-for="link in musicLinks">
             <a class="no-underline blue" :href="link.link"><span v-text="link.name"></span></a>
           </span>
+          </div>
         </div>
 
-        <g-image :src="$page.stuff.image" :alt="`${$page.stuff.title} Cover`" />
+        <div class="w-100 w-50-ns fl">
+            <g-image :src="$page.stuff.image" :alt="`${$page.stuff.title} Cover`" />
+        </div>
       </div>
     </div>
-  </layout>
+  </page-layout>
 </template>
 <page-query>
   query Post ($path: String!) {
@@ -30,14 +35,12 @@
 </page-query>
 <script>
   import { find } from 'lodash/fp'
-  import HeaderComponent from '../components/Navigation/NavigationHeaderComponent.vue'
 
   const linkMap =  [
     { contains: '.spotify.', name: 'Spotify' },
   ]
 
   export default {
-    components: { HeaderComponent },
     computed: {
       musicLinks () {
         return this.$page.stuff.links.map(link => {

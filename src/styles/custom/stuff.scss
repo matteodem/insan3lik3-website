@@ -2,6 +2,6 @@
 
 .custom-stuff-content {
   h1 {
-    @extend .f1, .lh-solid;
+    @extend .f1, .lh-solid, .mv2;
   }
 }
