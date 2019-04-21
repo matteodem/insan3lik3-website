@@ -1,9 +1,11 @@
 <template>
   <div>
     <div ref="logo">
-      <div class="tc mt4 custom-header" :class="{ 'no-wiggle': hasDragged }">
-        <div class="dib shadow-hover">
-          <g-image alt="Insan3Lik3" src="~/assets/images/logo.png" width="400" />
+      <div class="custom-header" :class="{ 'no-wiggle': hasDragged }">
+        <div class="tc mt4">
+          <div class="dib pointer">
+            <header-logo></header-logo>
+          </div>
         </div>
       </div>
 
@@ -16,7 +18,10 @@
   </div>
 </template>
 <script>
+  import HeaderLogo from './Header/HeaderLogoComponent.vue'
+
   export default {
+    components: { HeaderLogo },
     data () {
       return {
         hasDragged: false,
@@ -42,6 +47,7 @@
       })
 
       draggable.on('drag:start', () => {
+        this.$router.push('/')
         this.hasDragged = true
         localStorage.setItem('il3_hasDragged', true)
         // TODO play a FUN sound
