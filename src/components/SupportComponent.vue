@@ -1,6 +1,6 @@
 <template>
   <div class="pa3 pv4-l tc bg-black-05">
-    <div class="f3 f1-ns ph3 mb3-l tr-l b dark-land-violet">
+    <div class="f3 f1-ns ph3 mb3-l tl-l b dark-land-violet">
       You can support me by
     </div>
     <div class="mv3 tc dib-ns mh2-ns"
