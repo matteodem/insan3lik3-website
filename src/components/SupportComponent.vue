@@ -29,7 +29,7 @@
             content: 'buying some of my <span class="dark-visited-cloud-blue b">stuff</span>',
           },
           {
-            content: 'following me for more <span class="terrain-orange b">stuff</span>',
+            content: 'following me for more <span class="dark-terrain-orange b">stuff</span>',
           },
         ]
       }
