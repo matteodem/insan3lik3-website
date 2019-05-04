@@ -4,7 +4,7 @@
     <div class="mt4">
       <latest-stuff-component></latest-stuff-component>
     </div>
-    <div class="mt4">
+    <div class="mt2">
       <support-component></support-component>
     </div>
     <div>
