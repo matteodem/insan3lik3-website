@@ -41,6 +41,18 @@
   ]
 
   export default {
+    metaInfo () {
+      const title = this.$page.stuff.title
+
+      return {
+        title () {
+          return title
+        },
+        meta: [
+          { name: 'author', content: 'Matteo De Micheli' }
+        ],
+      }
+    },
     computed: {
       musicLinks () {
         return this.$page.stuff.links.map(link => {
