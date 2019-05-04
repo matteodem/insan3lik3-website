@@ -6,7 +6,7 @@
     <div class="mv3 tc dib-ns mh2-ns"
          v-for="(option, index) in supportOptions"
       >
-      <a :href="option.link" class="color-inherit link dib">
+      <a :href="option.link" class="color-inherit link dib hover-hyper">
         <div class="pa3 f4 bg-black-10 " v-html="option.content"></div>
       </a>
     </div>
