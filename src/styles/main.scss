@@ -3,7 +3,9 @@
 @import './custom/stuff.scss';
 
 $cloudBlue: rgb(149, 222, 234);
+$darkCloudBlue: darken($cloudBlue, 28%);
 $darkLandViolet: rgb(172, 106, 213);
+$terrainOrange: rgb(254, 118, 98);
 
 @keyframes barely-noticeable-wiggle {
   0% { transform: scale(1) rotate(0deg); }
@@ -18,5 +20,8 @@ $darkLandViolet: rgb(172, 106, 213);
 }
 
 .yantramanav { font-family: 'Yantramanav', sans-serif; }
-.visited-cloud-blue:visited { color: $cloudBlue; }
+.dark-visited-cloud-blue { color: $darkCloudBlue; }
+.terrain-orange { color: $terrainOrange; }
 .dark-land-violet { color: $darkLandViolet; }
+
+.visited-cloud-blue:visited { color: $cloudBlue; }

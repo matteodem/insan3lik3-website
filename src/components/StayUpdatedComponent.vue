@@ -1,6 +1,6 @@
 <template>
   <div class="white bg-black pa3 pa4-l">
-    <div class="f3 f2-l pointer v-mid lh-copy">
+    <div class="f3 f2-ns v-mid lh-copy">
       <div class="dib relative" style="top: 2px">
         <icon name="md-globe"></icon>
       </div>
