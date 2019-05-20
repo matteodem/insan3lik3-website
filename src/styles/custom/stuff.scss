@@ -4,4 +4,8 @@
   h1 {
     @extend .f1, .lh-solid, .mv2;
   }
+
+  p {
+    @extend .f4;
+  }
 }

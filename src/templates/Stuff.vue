@@ -9,8 +9,9 @@
 
           <div class="mv3 f3">
             Listen to on:
-            <span class="pl1" v-for="link in musicLinks">
-            <a class="no-underline blue" :href="link.link"><span v-text="link.name"></span></a>
+            <span class="pl1 lh-copy" v-for="(link, linkIndex) in musicLinks">
+            <a class="no-underline blue " :href="link.link"><span v-text="link.name"></span></a>
+            <span v-if="linkIndex + 1 !== musicLinks.length">, </span>
           </span>
           </div>
         </div>
@@ -38,6 +39,7 @@
 
   const linkMap =  [
     { contains: '.spotify.', name: 'Spotify' },
+    { contains: '.apple.', name: 'Apple' },
   ]
 
   export default {
